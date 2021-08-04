@@ -18,7 +18,6 @@ auth:
     file: /verdaccio/storage/htpasswd
     # Maximum amount of users allowed to register, defaults to "+infinity".
     # You can set this to -1 to disable registration.
-    max_users: 1
 
 # a list of other known repositories we can talk to
 uplinks:
@@ -28,7 +27,7 @@ uplinks:
 packages:
   "@*/*":
     # scoped packages
-    access: $authenticated
+    access: $all
     publish: $authenticated
     # proxy: npmjs
 
@@ -46,7 +45,7 @@ packages:
 
     # if package is not available locally, proxy requests to 'npmjs' registry
     # proxy: npmjs
-
+listen: https://verdaccio.smanax.com
 # log settings
 logs:
   - { type: stdout, format: pretty, level: debug }
