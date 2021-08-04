@@ -1,7 +1,8 @@
-storage: ./storage
+storage: /var/lib/verdacciod/storage
 auth:
   htpasswd:
-    file: ./htpasswd
+    file: /var/lib/verdacciod/htpasswd
+    max_users: 1000
 uplinks:
   npmjs:
     url: https://registry.npmjs.org/
