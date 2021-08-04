@@ -9,7 +9,7 @@ uplinks:
 packages:
   "@*/*":
     access: $all
-    publish: $authenticated
+    publish: $all
     proxy: npmjs
   "**":
     proxy: npmjs
