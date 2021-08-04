@@ -29,7 +29,7 @@ packages:
     # scoped packages
     access: $all
     publish: $authenticated
-    # proxy: npmjs
+    proxy: npmjs
 
   "**":
     # allow all users (including non-authenticated users) to read and
@@ -44,7 +44,7 @@ packages:
     publish: $authenticated
 
     # if package is not available locally, proxy requests to 'npmjs' registry
-    # proxy: npmjs
+    proxy: npmjs
 listen: https://verdaccio.smanax.com
 # log settings
 logs:
