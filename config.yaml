@@ -9,9 +9,11 @@ uplinks:
 packages:
   "@*/*":
     access: $all
-    publish: $all
+    publish: $authenticated
     proxy: npmjs
   "**":
+    access: $all
+    publish: $authenticated
     proxy: npmjs
 listen: https://verdaccio.smanax.com
 logs:
